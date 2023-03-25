@@ -21,7 +21,7 @@ h1 {
 	color: #555;
 }
 .auto{
-	position: absolute;
+	display: block;
 }
 .container{
 text-align: center;
@@ -30,3 +30,13 @@ text-align: center;
 .containerForm{
 	padding-top: 300px;
 }
+.posunDoleva{
+	margin-right: 30px;
+}
+.posunDoprava{
+	margin-left: 30px;
+}
+#myImage {
+	margin-left: 0px;
+	margin-right: 0px;
+  }
