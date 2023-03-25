@@ -1,30 +1,34 @@
-//UKOL1
+// UKOL1
 document.querySelector('#sipka1').addEventListener('click', () => {
 	const obr = document.querySelector('.auto')
-	obr.classList.add('btn-sipka--vlevo')
-})
+	obr.style.left = "20px";
+ })
 document.querySelector('#sipka2').addEventListener('click', () => {
-	const obr = document.querySelector('.auto')
-	obr.classList.add('btn-sipka--vpravo')
-});
+    const obr = document.querySelector('.auto')
+    obr.style.right = "20px";
+ });
+
+
+
 //UKOL2
 const user = {
 	email: 'bartolomej.rozumbrada@gmail.com',
 	password: 'vimzenicnevim',
 	name: 'Bartoloměj',
-};
-const controlMail = document.querySelector('#email')
-const controlHeslo = document.querySelector('#heslo')
-const formText = document.querySelector('.formText')
+}
 
-const formElm = document.querySelector('#registration')
-formElm.addEventListener('submit', (event) => {
-	event.preventDefault()
-    if( user.email === controlMail.value && user.password === controlHeslo.value
-    ) { 
-    
-        alert(`<h1>Přihlášený uživatel: ${user.name}</h1>`)
-    } else {
-        formText.textContent = 'Neplatné přihlašovací údaje'
-    }
+document.querySelector('#form').addEventListener('submit', (e) => {
+	e.preventDefault()
+
+	const emailInput = document.querySelector('#email')
+	const passwordInput = document.querySelector('#password')
+	const container = document.querySelector('.container')
+	const status = document.querySelector('#status')
+
+	if ( emailInput.value === user.email && passwordInput.value === user.password
+	) {
+		container.innerHTML = `<h1>Přihlášený uživatel: ${user.name}</h1>`
+	} else {
+		status.textContent = 'Neplatné přihlašovací údaje'
+	}
 })
