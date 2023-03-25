@@ -20,12 +20,18 @@
         <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
         </svg></button>
     </div>
-    <form id="registration">
-        <h1 class ="formText">Přihlašovací formulář</h1>
-        <input id="email" type="text" />
-        <input id="heslo" type="text" />
-        <button type="submit">Přihlásit</button>
-    </form>
+    <div class="containerForm">
+        <form id="form">
+            <h2 id="status"></h2>
+            <label class="field">E-mail: <input id="email" type="email" /></label>
+            <label class="field"
+                >Password: <input id="password" type="password"
+            /></label>
+            <div class="tlacitko">
+                <button type="submit">Přihlásit</button>
+            </div>
+        </form>
+    </div>
     </div>
     <script src="lekce1.js"></script>
 </body>
