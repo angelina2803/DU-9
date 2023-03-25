@@ -21,16 +21,12 @@ h1 {
 	color: #555;
 }
 .auto{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+	position: absolute;
 }
 .container{
 text-align: center;
 }
-.btn-sipka--vlevo{
-    margin-left: 20px;
-}
-.btn-sipka--vpravo{
-    margin-right: 20px;
+
+.containerForm{
+	padding-top: 300px;
 }
